@@ -37,8 +37,7 @@ function renderList() {
   var linksList = getSelectedRows(),
       sheet = SpreadsheetApp.getActiveSpreadsheet(),
       app = UiApp.createApplication().setTitle(title),
-      html = '',
-      renderLabels = [];
+      html = '';
 
   html += '<ul class="related_links">';
   for (var link, i = 0, len = linksList.length; i < len; i++) {
